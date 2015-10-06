@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="bbv"
+           fetch="https://scm.bbv.ch/git" />
+  <remote  name="github"
+           fetch="https://github.com" />
+  <remote  name="yoctoproject"
+           fetch="git://git.yoctoproject.org" />
+  <remote  name="openembedded"
+           fetch="git://git.openembedded.org/" />
+
+  <default revision="refs/heads/master"
+           remote="bbv"
+           sync-j="4" />
+
+  <project name="ApparatusGUIShowcase" remote="bbv" path="ApparatusGUIShowcase"/>
+  <project name="meta-qt5/meta-qt5" remote="github" path="meta-qt5"/>
+  <project name="meta-ti" remote="yoctoproject" path="meta-ti"/>
+  <project name="meta-openembedded" remote="openembedded" path="meta-openembedded"/>
+  <project name="Freescale/fsl-community-bsp-platform" remote="github" path="meta-freescale"/>
+  <project name="ApparatusGUIShowcase/platforms/yocto-meta/meta-bbv" remote="bbv" path="meta-bbv"/>
+
+</manifest>
